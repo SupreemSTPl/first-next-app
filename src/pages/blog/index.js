@@ -13,7 +13,6 @@ export const getStaticProps = async () => {
     }
 }
 const Blog = ({ data }) => {
-    console.log("data", data);
     return (
         <>
             <h1>All the blogs
