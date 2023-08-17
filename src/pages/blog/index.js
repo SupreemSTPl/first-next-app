@@ -16,7 +16,10 @@ const Blog = ({ data }) => {
     console.log("data", data);
     return (
         <>
-            {data?.slice(0, 5)?.map((item) => <Link href={`/blog/${item?.id}`}><h1>{item?.title}</h1></Link>)}
+            <h1>All the blogs
+
+            </h1>
+            {data?.slice(0, 5)?.map((item) => <Link href={`/blog/${item?.id}`}><h4>{item?.title}</h4></Link>)}
         </>
     )
 }
